@@ -1,5 +1,5 @@
 import React from 'react';
-import { AreaChart as AC, Area, XAxis,Tooltip, YAxis,ReferenceLine } from 'recharts';
+import { AreaChart as AC, Area, XAxis,Tooltip,BarChart,Bar, YAxis,ReferenceLine } from 'recharts';
 
 const AreaChart = () => {
     const data = [
@@ -127,6 +127,11 @@ const AreaChart = () => {
           <Area type="monotone" dataKey="scores.chemistry" stackId="1" stroke="#ffc658" fill="#ffc658" />
         </AC>
         <h4 className='text-4xl ps-10'>Area chart</h4>
+
+        <BarChart width={800} height={450} data={data}>
+          <Bar dataKey="scores.chemistry" fill="#8884d8" />
+          <XAxis dataKey={'name'}></XAxis>
+        </BarChart>
         </div>
     );
 };
