@@ -1,6 +1,6 @@
 
-
 import LineChartsDemo from './Components/LineChartsDemo/LineChartsDemo'
+import AreaChart from './Components/AreaCharts/AreaChart'
 
 function App() {
 
@@ -8,6 +8,7 @@ function App() {
   return (
     <>
     <LineChartsDemo></LineChartsDemo>
+    <AreaChart></AreaChart>
     </>
   )
 }
